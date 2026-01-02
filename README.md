@@ -40,7 +40,7 @@ and plays nicely with HACS and ApexCharts.
 
 * Repo type: **Integration**, URL:  
 
-	https://github.com/Sundancer78/hacs\_ingstocksplus
+	https://github.com/Sundancer78/hacs_ingstocksplus
 
 2. Install **ING Stocks Plus**
 
