@@ -1,11 +1,24 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 *.so
+*.egg-info/
+dist/
+build/
 
-# Home Assistant / HACS
-.storage/
-.config/
-.cache/
+# Virtualenvs
+.venv/
+venv/
+
+# Editors / IDEs
 .vscode/
 .idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Home Assistant / HACS noise (optional)
+.cache/
