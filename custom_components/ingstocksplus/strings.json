@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ING Stocks Plus",
+        "description": "Add an ISIN to track price and optional key figures.",
+        "data": {
+          "isin": "ISIN",
+          "name": "Name (optional)",
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "name": "Name (optional)",
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  }
+}

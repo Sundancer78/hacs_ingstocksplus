@@ -1,0 +1,11 @@
+{
+  "domain": "ingstocksplus",
+  "name": "ING Stocks Plus",
+  "version": "1.0.0",
+  "documentation": "https://github.com/Sundancer78/hacs_ingstocksplus",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@Sundancer78"],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}
