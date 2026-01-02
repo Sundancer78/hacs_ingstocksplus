@@ -115,3 +115,12 @@ graph_span: 30d
 series:
   - entity: sensor.ingstocksplus_ie000ul6clp7_price
     name: Kurs
+
+
+---
+
+
+##Notes
+
+- Some instruments may not have keyfigures → those sensors won’t be created
+- Choose scan intervals wisely (e.g., 5–30 minutes) to avoid API throttling
