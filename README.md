@@ -105,12 +105,12 @@ With **ApexCharts Card**:
 type: custom:apexcharts-card
 header:
   show: true
-  title: Global X Silver Miners UCITS ETF
+  title: Vanguard FTSE All-World UCITS ETF USD Acc
   show_states: true
   colorize_states: true
 graph_span: 1d
 series:
-  - entity: sensor.global_x_silver_miners_ucits_etf_preis_2
+  - entity: sensor.vanguard_ftse_all_world_ucits_etf_usd_acc_preis_2
     name: Kurs
     stroke_width: 2
     extend_to: false
