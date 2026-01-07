@@ -73,29 +73,27 @@ and plays nicely with HACS and ApexCharts.
 
 The following sensors are created per ISIN (where available):
 
+
 | Entity Key              | Meaning |
-
 |-------------------------|---------|
-
 | `price`                 | Last price |
-
 | `change_percent`        | Percentage change |
-
 | `change_absolute`       | Absolute change |
-
 | `last_update`           | Last update timestamp |
-
 | `dividend_yield`        | Dividend yield (if available) |
-
 | `price_earnings_ratio`  | P/E ratio (if available) |
-
 | `market_capitalization` | Market cap (if available) |
-
 | `52w_low` / `52w_high`  | 52-week low/high (if available) |
 
 
 
 ---
+
+
+##Notes
+
+- Some instruments may not have keyfigures → those sensors won’t be created
+- Choose scan intervals wisely (e.g., 5–30 minutes) to avoid API throttling
 
 
 ##Example Lovelace Card
@@ -107,20 +105,12 @@ With **ApexCharts Card**:
 type: custom:apexcharts-card
 header:
   show: true
-  title: "SPDR Europe Defense"
+  title: Global X Silver Miners UCITS ETF
   show_states: true
   colorize_states: true
-graph_span: 30d
-
+graph_span: 1d
 series:
-  - entity: sensor.ingstocksplus_ie000ul6clp7_price
+  - entity: sensor.global_x_silver_miners_ucits_etf_preis_2
     name: Kurs
-
-
----
-
-
-##Notes
-
-- Some instruments may not have keyfigures → those sensors won’t be created
-- Choose scan intervals wisely (e.g., 5–30 minutes) to avoid API throttling
+    stroke_width: 2
+    extend_to: false
