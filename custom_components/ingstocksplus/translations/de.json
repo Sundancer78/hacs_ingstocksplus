@@ -7,7 +7,8 @@
         "data": {
           "isin": "ISIN",
           "name": "Name (optional)",
-          "scan_interval": "Update-Intervall (Minuten)"
+          "scan_interval": "Update-Intervall (Minuten)",
+          "instrument_type": "Instrument-Typ"
         }
       }
     }
@@ -18,8 +19,18 @@
         "title": "Optionen",
         "data": {
           "name": "Name (optional)",
-          "scan_interval": "Update-Intervall (Minuten)"
+          "scan_interval": "Update-Intervall (Minuten)",
+          "instrument_type": "Instrument-Typ"
         }
+      }
+    }
+  },
+  "selector": {
+    "instrument_type": {
+      "options": {
+        "auto": "Automatisch erkennen",
+        "etf": "ETF / Fonds",
+        "stock": "Aktie"
       }
     }
   }
