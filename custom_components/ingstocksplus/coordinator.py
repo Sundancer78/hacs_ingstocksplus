@@ -24,7 +24,7 @@ class INGStocksCoordinator(DataUpdateCoordinator[dict[str, Any]]):
 
     async def _async_update_data(self) -> dict[str, Any]:
         header_url = (
-            f"https://component-api.wertpapiere.ing.de/api/v1/components/instrumentheader/{self.isin}"
+            f"https://component-api.wertpapiere.ing.de/api/v1/instrument-header?isinOrSearchTerm={self.isin}"
         )
         keyfigures_url = (
             f"https://component-api.wertpapiere.ing.de/api/v1/share-ng/keyfigures/{self.isin}"
